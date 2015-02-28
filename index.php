@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+</head>
+
+<body>
+
 <?php
 
 $currentTime = new DateTime("now", new DateTimeZone('Europe/London'));
@@ -31,3 +45,7 @@ echo "<p><small>Another world-class public service provided by <a href='mailto:k
 exit;
 
 ?>
+
+</body>
+
+</html>
