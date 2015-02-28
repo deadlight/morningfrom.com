@@ -1,0 +1,12 @@
+body {
+	color: white;
+}
+
+.bg {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(../img/gradient-bg.png) center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}

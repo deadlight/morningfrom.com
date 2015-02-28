@@ -1,0 +1,19 @@
+.button {
+	width: 120px;
+	padding: 20px 0;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	-webkit-box-shadow: inset 2px 2px 0 #eee,inset -2px -2px 0 #eee;
+	box-shadow: inset 2px 2px 0 #eee,inset -2px -2px 0 #eee;
+	-webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+	&:hover {
+		color: #1a1a1a;
+		-webkit-box-shadow: inset 2px 2px 0 #eee,inset -2px -240px 0 #eee;
+		box-shadow: inset 2px 2px 0 #eee,inset -2px -240px 0 #eee;
+	}
+}

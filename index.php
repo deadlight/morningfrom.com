@@ -8,9 +8,15 @@
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
+    <style type="text/css">
+    </style>
+
 </head>
 
 <body>
+
+<div class="bg"></div>
+<div class="button">Find out</div>
 
 <?php
 
@@ -33,13 +39,15 @@ foreach ($timezoneIdentifiers as $identifier) {
 $selectedZone = $timezones[$timeSinceGMTMorning][array_rand($timezones[$timeSinceGMTMorning])];
 $selectedZoneParts = explode('/', $selectedZone);
 
-//echo "\n\nCurrent Hour: $currentHour. \n\n";
+// echo "\n\nCurrent Hour: $currentHour. \n\n";
 
-//echo "\n\nGood morning from $selectedZoneParts[1] ($selectedZoneParts[0])\n\n";
+// echo "\n\nGood morning from $selectedZoneParts[1] ($selectedZoneParts[0])\n\n";
+
 
 echo "\n\n<h1>Good morning from $selectedZoneParts[1]</h1>";
 echo "<p>Inspired by <a href='http://xkcd.com/448/' target='_blank'>XKCD 448</a></p>";
-echo "<p><small>Another world-class public service provided by <a href='mailto:karl@deadlight.net'>Karl Williams</a>. Stay tuned for actual HTML and CSS.</small></p>";
+
+
 
 
 exit;
