@@ -11,13 +11,12 @@
         $timezoneObject = new DateTimeZone($identifier);
         $offset = $timezoneObject->getOffset($currentTime); //Offset, seconds
         $offsetHour = round($offset/3600);
-
-
         $timezones[$offsetHour][] = $identifier;
     }
 
     $selectedZone = $timezones[$timeSinceGMTMorning][array_rand($timezones[$timeSinceGMTMorning])];
     $selectedZoneParts = explode('/', $selectedZone);
+    $selectedZoneParts[1] = str_replace('_', ' ', $selectedZoneParts[1]);
 ?>
 <html>
     <head>
